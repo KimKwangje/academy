@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 사용</title>
+    <style>
+        body {
+            /* background-color: #000000; */
+        }
+        img {
+            width: 320px;
+            height: 320px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. 로컬 컴퓨터에서 이미지 사용하기 -->
+    <p>
+        <img src="./images/first.jpg" alt="물방울">
+        <img src="./images/flower.jpg" alt="꽃">
+    </p>
+    <p>
+        <img src="./images/flowerboom.jpg" alt="꽃의 물방울">
+        <img src="./images/firework.jpg" alt="불꽃놀이">
+    </p>
+    <p>
+        <img src="./images/tree.jpg" alt="나무이미지">
+    </p>
+    <!-- 2. CDN 방식으로 이미지 사용하기 -->
+    <p>
+        <img src="https://cdn.pixabay.com/photo/2023/04/17/11/37/mirrors-7932159_1280.jpg" alt="오렌지">
+        <img src="https://images.unsplash.com/photo-1696610101250-f5933d2f616c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" alt="폭포">
+    </p>
+    <p>
+        <a href="http://www.daum.net" target="_blank"> <!--href = 링크, target = 새창-->
+            <img src="https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png" alt="다음로고">
+        </a>
+    </p>
+    <!-- 3. 가상 이미지 사용하기 -->
+    <img src="http://placehold.it/640x480/ff0000" alt="가상이미지"><!--640x480(크기)/ff0000(color)-->
+    <!-- 4. 투명배경사용 .png -->
+    <img src="./images/apple.png" alt="투명이미지애플로고">
+    <!-- 5. 벡터방식사용 .svg -->
+    <img src="./images/AppleLine.svg" alt="애플로고 svg">
+</body>
+</html>
