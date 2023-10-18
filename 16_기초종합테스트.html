@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기초 종합 테스트</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <style>
+        body {
+            background-color: black;
+        }
+        #wrap  {
+            width: 1000px;
+            margin: 0 auto;
+            background-color: silver;
+            text-align: center;
+        }nav ul li {
+            display: inline-block;
+            margin: 20px 40px 0 0;
+        }
+        .gnb ul li:nth-child(5) {
+            margin-right: 0px;
+        }
+        .gnb ul li a:hover {
+            color: red;
+            background-color: yellow;
+        }
+        h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 50px;
+            margin: 40px auto;
+        }
+        fieldset {
+            width: 70%;
+            border: 2px solid black;
+            margin: 0 auto;
+        }
+        ul {
+            margin: 30px auto;
+        }
+        footer {
+            padding: 30px;
+            font-size: 30px;
+            background-image: url('./images/waterboom.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <img src="./images/mont.png" alt="로고">
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#">MENU1</a></li>
+                    <li><a href="#">MENU2</a></li>
+                    <li><a href="#">MENU3</a></li>
+                    <li><a href="#">MENU4</a></li>
+                    <li><a href="#">MENU5</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>2023-01-12</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eum, eius asperiores nihil minima ratione odit quas est labore id accusantium voluptatem atque expedita recusandae iure aut fugiat sed corporis.
+                </p>
+            </section>
+            <section>
+                <form action="#">
+                    <h2>Form List</h2>
+                    <fieldset>
+                        <legend>Log-in Information</legend>
+                        <ul>
+                            <li>
+                                <label for="a_id">ID : </label>
+                                <input type="text" name="a_id" id="a_id" size="10">
+                            </li>
+                            <li>
+                                <label for="a_pw">PASSWORD : </label>
+                                <input type="password" name="a_pw" id="a_pw">
+                            </li>
+                            <li>
+                                <label for="a_pwc">PASSCHECK : </label>
+                                <input type="password" name="a_pwc" id="a_pwc">
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Department</legend>
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="checkbox" value="Web Publidhing" checked>Web Publidhing
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" value="App Developer">App Developer
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" value="Web Planner">Web Planner
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <input type="submit" value="SUBMIT">
+                    <input type="button" value="BUTTON">
+                </form>
+            </section>
+        </main>
+        <footer>
+            Copyright All Rights Rexerved., MCSSAM
+        </footer>
+    </div>
+</body>
+</html>

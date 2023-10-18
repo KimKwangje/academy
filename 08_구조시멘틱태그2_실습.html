@@ -6,8 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>구조 시멘틱 태그 실습</title>
     <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        body {
+            background-color: black;
+        }
+        #wrap {
+            width: 960px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        header {
+            background-color: red;
+            text-align: left;
+        }
+        nav {
+            background-color: green;
+        }
+        section {
+            background-color: blue;
+        }
+        article {
+            background-color: cyan;
+        }
+        div {
+            background-color: magenta;
+        }
+        footer {
+            background-color: yellow;
+        }
+    </style>
 </head>
 <body>
-    test
+    <div id="wrap">
+        <header>
+            <h1>LOGO</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">1 DEPTH MENU1</a>
+                        <ul>
+                            <li><a href="#">2 DEPTH SubMENU1</a></li>
+                            <li><a href="#">2 DEPTH SubMENU2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">1 DEPTH MENU2</a></li>
+                    <li><a href="#">1 DEPTH MENU3</a></li>
+                    <li><a href="#">1 DEPTH MENU4</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <section>
+                    <h2>왼쪽 콘텐츠</h2>
+                    <p>왼쪽내용</p>
+                </section>
+                <article>
+                    <h2>가운데 콘텐츠</h2>
+                    <p>가운데 내용</p>
+                </article>
+                <div>
+                    <h2>오른쪽 내용</h2>
+                    <p>오른쪽 내용</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>사이트 정보</p>
+        </footer>
+    </div>
 </body>
 </html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폰트 사용</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+        #wrap {
+            width: 960px;
+            margin: 0 auto;
+            border: 1px solid black;
+            padding: 40px;
+        }
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 24px;
+        }
+        h2 {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 28px;
+        }
+        h3 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 20px;
+        }
+        .a_txt1 {
+            font-family: 'Nanum Pen Script', cursive;
+        }
+        .a_txt2 {
+            font-family: 'Noto Serif KR', serif;
+        }
+        .a_txt3 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .font {
+            font-family: 'Roboto', serif;
+            font-size: 30px;
+            /* normal = 400, bold = 700, bolder = 900 */
+            font-weight: 700;
+            color: orange;
+            /* 행간  = 생략시 기본단위 em | 폰트크기가 기준값 */
+            line-height: 1.5em;
+            /* 폰트 한줄 쓰기 */
+            font: 16px/1.5 'Montserrat', sans-serif;
+            color: skyblue;
+            /* 폰트 사이즈 가변계산 */
+            /* 16px = 1em = 100% = 1rem  */
+            font-size: 30px;
+            /* (30/16) = 1.875 */
+            font-size: 1.875em;
+            font-size: 187.5%;
+        }
+        .color_font {
+            font-size: 24px;
+            color: #0000ff;
+            color: #00f;
+            color: blue;
+            color: rgb(0,0,255);
+            /* a(alpha) = 0부터 1까지의 값 */
+            color: rgba(0,0,255,1);
+        }
+        .fontSize {
+            font-family: 'Noto Sans KR', sans-serif;
+            color: rgba(0,0,0,0.7);
+            font-size: 12px;
+            /* (12/16) */
+            font-size: 0.75em;
+            font-size: 75%;
+            /* 폰트 한줄 쓰기 = +행간1.5 */
+            /* font: 700 italic 12px/1.5 'Noto Sans KR, sans-serif'; */
+            font: 12px/1.5 'Noto Sans KR', sans-serif;
+            font-weight: 700;
+            font-style: italic;
+            /* em 단위 */
+            font-size: 1em;
+        }
+        /* rem 단위 | =html {fomt-size: 내가 원하는 기준값으로 코딩} */
+        .rem {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>Web Standard Publishing</h1>
+        <h2>웹표준 방식 코딩</h2>
+        <h3>OSWALD</h3>
+        <p class="a_txt1">나눔펜스크립트</p>
+        <p class="a_txt2">NotoSerif 명조</p>
+        <p class="a_txt3">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, soluta velit doloribus voluptas asperiores accusantium cumque voluptate, expedita, dicta aut neque eius. Laboriosam maiores veritatis soluta fuga placeat facere expedita?
+        </p>
+        <p class="font">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, soluta velit doloribus voluptas asperiores accusantium cumque voluptate, expedita, dicta aut neque eius. Laboriosam maiores veritatis soluta fuga placeat facere expedita?
+        </p>
+        <p class="color_font">글자색</p>
+        <p class="fontSize">Font Size</p>
+        <p class="rem">rem 단위</p>
+    </div>
+</body>
+</html>

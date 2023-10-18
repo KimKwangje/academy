@@ -70,6 +70,119 @@
             </ul>
         </fieldset>
 
+        <fieldset>
+            <!-- 1가지의 결과만 얻고 싶을때 radio -->
+            <legend>라디오 버튼</legend>
+            <p>
+                이 달에 신청한 과목을 선택하세요(1과목만 가능)
+            </p>
+            <label>
+                <input type="radio" name="subject" value="html" checked>HTML
+            </label>
+            <label>
+                <input type="radio" name="subject" value="css">CSS
+            </label>
+            <label>
+                <input type="radio" name="subject" value="js">javaScript
+            </label>
+        </fieldset>
+
+        <br><br><br>
+
+        <fieldset>
+            <legend>체크박스</legend>
+            <p>
+                정보를 받고 싶은 과목을 선택하세요(복수선택가능)
+            </p>
+            <label>
+                <input type="checkbox" name="mailling1" value="html" checked>HTML
+            </label>
+            <label>
+                <input type="checkbox" name="mailing2" value="css">CSS
+            </label>
+            <label>
+                <input type="checkbox" name="mailing3" value="js">javaScript
+            </label>
+        </fieldset>
+
+        <br><br><br>
+
+        <fieldset>
+            <legend>HTML5 input type</legend>
+            <p>
+                <label for="c_search">검색 : </label>
+                <input type="search" name="c_search" id="c_search">
+            </p>
+            <p>
+                <label for="c_url">사이트 주소 : </label>
+                <input type="url" name="c_url" id="c_url">
+            </p>
+            <!-- 부가적 input type -->
+            <p>
+                <label for="c_number">수량 : </label>
+                <input type="number" name="c_number" id="c_number" value="0" min="0" max="5" step="2">
+            </p>
+            <p>
+                <label for="c_date">날짜선택(년,월,일)</label>
+                <input type="date" name="c_date" id="c_date">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>select | 여러데이터 나열</legend>
+            <p>
+                <label for="web">웹블리싱</label>
+            </p>
+            <p>
+                여러항목을 선택하고 싶으면, SHIFT+클릭 | CTRL+클릭(단, multiple 코딩시만)
+            </p>
+            <!-- <select name="seldata" id="web" multiple> -->
+            <select name="seldata" id="web">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">javaScript</option>
+                <option value="jq">jQuery</option>
+                <option value="rwd">Responsive Web</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>optgroup | 여러 데이터 분류</legend>
+            <p>
+                <label for="web2">웹퍼블리싱 디자인</label>
+                <select name="seldata2" id="web2">
+                    <optgroup label="웹퍼블리싱">
+                            <option value="html">HTML</option>
+                            <option value="css">CSS</option>
+                            <option value="js">javaScript</option>
+                            <option value="jq">jQuery</option>
+                            <option value="rwd">Responsive Web</option>
+                    </optgroup>
+                    <optgroup label="서버프로그래밍">
+                        <option value="java">JAVA</option>
+                        <option value="oracle">Oracle</option>
+                        <option value="jsp">JSP</option>
+                    </optgroup>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>disabled 속성 readonly 속성</legend>
+            <ul>
+                <li>
+                    <label for="serial">시리얼 넘버 입력 : </label>
+                    <input type="text" id="serial" name="serial" placeholder="시리얼 넘버 입력">
+                    <input type="button" value="이전">
+                    <input type="button" value="다음" disabled>
+                </li>
+                <li>
+                    <label for="book">선택한 책 : </label>
+                    <input type="text" name="book" id="book" value="웹퍼블리싱" readonly>
+                </li>
+            </ul>
+        </fieldset>
+
+        <br><br>
         <!-- 하나의 폼에서 submit버튼을 한개만 있어야 함 -->
         <input type="submit" value="전송">
         <input type="reset" value="취소">

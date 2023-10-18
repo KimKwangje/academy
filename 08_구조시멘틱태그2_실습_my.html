@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구조 시멘틱 태그 실습</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+       body {
+            background-color: black;
+            width: 960px;
+            margin: 0 auto;
+        }
+        h1 {
+            background-color: red;
+        }
+        li {
+            background-color: green;
+        }
+        #left {
+            background-color: blue;
+            text-align: center;
+        }
+        #center {
+            background-color: aqua;
+            text-align: center;
+        }
+        #right {
+            background-color: blueviolet;
+            text-align: center;
+        }
+        footer {
+            background-color: yellow;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LOGO</h1>
+        <nav>
+            <ul>
+                <li>1 DEPTH MENU1
+                    <ul>
+                        <li>2 DEPTH SubMENU1</li>
+                        <li>2 DEPTH SubMENU1</li>
+                    </ul>
+                </li>
+                <li>1 DEPTH MENU2</li>
+                <li>1 DEPTH MENU3</li>
+                <li>1 DEPTH MENU4</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="left">
+            <section>
+                <h2>왼쪽 콘텐츠</h2>
+                <article>
+                    왼쪽 내용
+                </article>
+            </section>
+        </div>
+        <div id="center">
+                <section>
+                    <h2>가운데 콘텐츠</h2>
+                    <article>
+                        가운데 내용
+                    </article>
+                </section>
+        </div>
+        <div id="right">
+                <section>
+                    <h2>오른쪽 콘텐츠</h2>
+                    <article>
+                        오른쪽 내용
+                    </article>
+                </section>
+        </div>
+    </main>
+    <footer>
+        <p>
+            사이트정보
+        </p>
+    </footer>
+    <aside>
+
+    </aside>
+</body>
+</html>
